@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tran Thi Phuong Nam</title>
+    <style>
+      body {
+          display: flex;
+          justify-content: center; /* Canh giữa theo chiều ngang */
+          align-items: center; /* Canh giữa theo chiều dọc */
+          height: 100vh; /* Chiều cao của body đầy đủ */
+          margin: 0; /* Bỏ margin mặc định */
+          background-color: #282c34; /* Màu nền cho body */
+      }
+
+      a {
+        font-family: 'Pangolin', sans-serif;
+        display: flex; /* Thiết lập Flexbox cho thẻ a */
+            justify-content: center; /* Căn giữa theo chiều ngang */
+            align-items: center; /* Căn giữa theo chiều dọc */
+        width: 200px;
+        height: 80px;
+        z-index: 99;
+          background-color: #df5fc3; /* Màu nền hồng */
+          color: white; /* Màu chữ trắng */
+          border: 2px solid #faace6; /* Viền màu hồng nhạt */
+          padding: 15px 30px; /* Khoảng cách bên trong nút */
+          font-size: 18px; /* Kích thước chữ */
+          text-decoration: none; /* Bỏ gạch chân */
+          border-radius: 5px; /* Bo tròn góc cho nút */
+          box-shadow: 0 0 5px #faace6,  /* Ánh sáng nhạt quanh viền */
+                      0 0 10px #faace6; /* Ánh sáng mạnh hơn */
+          transition: transform 0.3s, box-shadow 0.3s; /* Hiệu ứng chuyển tiếp cho biến hình và bóng */
+      }
+
+      a:hover {
+          transform: scale(1.05); /* Phóng to nhẹ khi hover */
+          box-shadow: 0 0 10px #faace6,  /* Bóng sáng hơn khi hover */
+                      0 0 20px #faace6; /* Ánh sáng mạnh hơn khi hover */
+      }
+  </style>
+</head>
+<body class="not-loaded">
+  <a href="index.html">Nhấn ở đeyy</a>
+  <div class="night"></div>
+</body>
+</html>
+<script src="main.js"></script>
