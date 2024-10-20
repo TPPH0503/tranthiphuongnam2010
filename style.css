@@ -6,6 +6,52 @@
   box-sizing: border-box;
 }
 
+h4 {
+  font-family: 'Pangolin', sans-serif;
+  text-align: center;
+  font-size: 24px;
+  color: #f892de; /* Màu chữ hồng */
+  margin: 0;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0; /* Bắt đầu với độ trong suốt 0 */
+  animation-delay: 3s;
+  animation: fadeIn 3s ease forwards; /* Animation làm mờ chữ hiện dần */
+  text-shadow: 
+      0 0 5px #faace669,  /* Ánh sáng nhạt gần chữ */
+      0 0 10px #faace65e, /* Ánh sáng mạnh hơn */
+      0 0 15px rgba(250, 170, 230, 0.3); /* Bóng nhẹ hơn cho độ sáng */
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0; /* Mờ hoàn toàn lúc ban đầu */
+  }
+  100% {
+      opacity: 1; /* Hiện rõ sau 1 giây */
+  }
+}
+
+h4 {
+  animation: fadeIn 3s ease forwards; /* Áp dụng animation khi trang tải */
+}
+
+@media (max-width: 768px) {
+  h4 {
+      top: 30vh; /* Đặt thẻ h4 ở giữa màn hình điện thoại */
+      width: 100%; /* Bắt đầu với chiều rộng bằng 0 cho điện thoại */
+  }
+}
+
+@media (max-width: 768px) {
+  h4 {
+      top: 30vh; /* Cách trên 40% chiều cao màn hình trên điện thoại */
+  }
+}
+
 :root {
   --dark-color: #000;
 }
